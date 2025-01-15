@@ -44,17 +44,22 @@
 							</p>
 						</div>
 						<div class="action-buttons">
-							<button id="update">Update</button>
+							<button id="update" onclick="updateMovieDetails()">Update</button>
 							<button id="delete">Delete</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="movie-form">
-				<input type="text" placeholder="Image" /><input type="text" placeholder="Movie Name" /><input
+				<input id="image" type="text" placeholder="Image" /><input
+					id="title"
 					type="text"
-					placeholder="rating"
-				/><input type="text" placeholder="description" />
+					placeholder="Movie Name"
+				/><input id="rating" type="text" placeholder="rating" /><input
+					id="description"
+					type="text"
+					placeholder="description"
+				/>
 				<button id="add">ADD</button>
 			</div>
 		</section>
