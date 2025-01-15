@@ -31,18 +31,30 @@
 
                 <div class="movie">
 
-                </div>
-
-            </div>
-        </div>
-        </div>
-        <div class="movie-form">
-            <input id="image" type="text" placeholder="Image" /><input id="title" type="text"
-                placeholder="Movie Name" /><input id="rating" type="text" placeholder="rating" /><input id="description"
-                type="text" placeholder="description" />
-            <button id="add">ADD</button>
-        </div>
-    </section>
-</body>
-
+					</div>
+				
+					</div>
+				</div>
+			</div>
+			<div class="movie-form">
+                <form action="" class="movie-form">
+                    <label for="image">Image</label>
+                    <input id="image" type="text" placeholder="" required/>
+                    <label for="title">Title</label><input id="title" type="text" placeholder="" required />
+                    <label for="rating">Rating</label>
+                    <input
+                        id="rating" type="number" min="1" max="9.9"
+                        placeholder=""
+                        required
+                    />
+                    <label for="description">Description</label>
+                    <input id="description" type="text" placeholder="" required/>
+                
+				<button id="add">ADD</button>
+                <button id="apply-updates">SAVE</button>
+                </form>
+			</div>
+		</section>
+        
+	</body>
 </html>

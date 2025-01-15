@@ -25,13 +25,23 @@ body {
 	border-radius: 10px;
 }
 .content-area {
-	margin: 50px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	height: 100vh;
 }
 
 .movie {
 	border-radius: 2px solid white;
 	width: 20vw;
 	height: 60vh;
+}
+.movie-container {
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
 }
 .movie img {
 	/* border-radius: 5px solid gray; */
@@ -51,14 +61,17 @@ body {
 	height: 25px;
 }
 .movie-form {
-	margin-top: 150px;
-	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
 	gap: 15px;
+	background-color: azure;
+	color: black;
 }
 .movie-form button {
 	align-self: center;
 	width: 20vw;
+}
+button {
+	padding: 1rem;
 }
