@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Arcane Movies</title>
-		<link rel="stylesheet" href="style.css" />
-		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
-		<script defer src="app.js"></script>
-	</head>
-	<body>
-		<section class="movie-site">
-			<div class="nav-container">
-				<div class="logo-container">
-					<h2>ARCANE</h2>
-					<h3>movies</h3>
-				</div>
-				<!-- <div class="nav-links">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcane Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <section class="movie-site">
+        <div class="nav-container">
+            <div class="logo-container">
+                <h2>ARCANE</h2>
+                <h3>movies</h3>
+            </div>
+            <!-- <div class="nav-links">
                 
             </div> -->
-				<div class="search-bar">
-					<ion-icon name="search"></ion-icon>
-					<input type="text" />
-				</div>
-			</div>
-			<div class="content-area">
-				<div class="movie-container">
+            <div class="search-bar">
+                <ion-icon name="search"></ion-icon>
+                <input type="text" />
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="movie-container">
 
-					<div class="movie">
+                <div class="movie">
 
 					</div>
 				
@@ -35,18 +37,24 @@
 				</div>
 			</div>
 			<div class="movie-form">
-				<label for="image">Image</label>
-				<input id="image" type="text" placeholder="" />
-				<label for="title">Title</label><input id="title" type="text" placeholder="" />
-				<label for="rating">Rating</label>
-				<input
-					 id="rating" type="text"
-					placeholder=""
-				/>
-				<label for="description">Description</label>
-				<input id="description" type="text" placeholder="" />
+                <form action="" class="movie-form">
+                    <label for="image">Image</label>
+                    <input id="image" type="text" placeholder="" required/>
+                    <label for="title">Title</label><input id="title" type="text" placeholder="" required />
+                    <label for="rating">Rating</label>
+                    <input
+                        id="rating" type="number" min="1" max="9.9"
+                        placeholder=""
+                        required
+                    />
+                    <label for="description">Description</label>
+                    <input id="description" type="text" placeholder="" required/>
+                
 				<button id="add">ADD</button>
+                <button id="apply-updates">SAVE</button>
+                </form>
 			</div>
 		</section>
+        
 	</body>
 </html>

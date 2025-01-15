@@ -25,6 +25,10 @@ body {
 	border-radius: 10px;
 }
 .content-area {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 	padding: 50px;
 	height: 100vh;
 }
@@ -33,6 +37,11 @@ body {
 	border-radius: 2px solid white;
 	width: 20vw;
 	height: 60vh;
+}
+.movie-container {
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
 }
 .movie img {
 	/* border-radius: 5px solid gray; */
@@ -52,7 +61,6 @@ body {
 	height: 25px;
 }
 .movie-form {
-	
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
@@ -63,8 +71,7 @@ body {
 .movie-form button {
 	align-self: center;
 	width: 20vw;
-
 }
-button{
+button {
 	padding: 1rem;
 }
