@@ -52,6 +52,7 @@ body {
 }
 .movie-form {
 	margin-top: 150px;
+	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
