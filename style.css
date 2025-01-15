@@ -25,7 +25,8 @@ body {
 	border-radius: 10px;
 }
 .content-area {
-	margin: 50px;
+	padding: 50px;
+	height: 100vh;
 }
 
 .movie {
@@ -51,13 +52,19 @@ body {
 	height: 25px;
 }
 .movie-form {
-	margin-top: 150px;
+	
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
 	gap: 15px;
+	background-color: azure;
+	color: black;
 }
 .movie-form button {
 	align-self: center;
 	width: 20vw;
+
+}
+button{
+	padding: 1rem;
 }
